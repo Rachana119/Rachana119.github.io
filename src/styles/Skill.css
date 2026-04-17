@@ -1,0 +1,136 @@
+/* ===== SECTION ===== */
+.skills-section {
+  padding: 90px 8%;
+  color: #e6edf3;
+}
+
+.skills-title {
+  font-size: 2.6rem;
+  margin-bottom: 8px;
+}
+
+.skills-subtitle {
+  opacity: 0.75;
+  margin-bottom: 40px;
+}
+
+/* ===== JUMBLED AREA ===== */
+.skills-jumble-area {
+  position: relative;
+  height: 420px;
+  border-radius: 30px;
+  background: radial-gradient(circle at center, #041b22, #020617);
+  margin-bottom: 90px;
+  overflow: hidden;
+}
+
+/* ===== BUBBLES ===== */
+.skill-bubble {
+  position: absolute;
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: radial-gradient(circle at top, #062b33, #020617);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  z-index: 1;
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+/* ===== REAL LOGO STYLE ===== */
+.skill-bubble i {
+  font-size: 2.8rem;
+  color: #00e5ff;
+  transition: transform 0.35s ease, filter 0.35s ease;
+}
+
+/* ===== HOVER / CURSOR HIGHLIGHT ===== */
+.skill-bubble:hover {
+  transform: scale(1.25);
+  border-color: rgba(0, 229, 255, 0.8);
+  box-shadow:
+    0 0 25px rgba(0, 229, 255, 0.6),
+    0 0 50px rgba(0, 229, 255, 0.35);
+  z-index: 10;
+}
+
+.skill-bubble:hover i {
+  filter: drop-shadow(0 0 12px rgba(0, 229, 255, 0.9));
+}
+
+/* ===== SKILL NAME (ON HOVER ONLY) ===== */
+.bubble-text {
+  margin-top: 6px;
+  font-size: 0.7rem;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.skill-bubble:hover .bubble-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ===== SKILL CARDS ===== */
+.skills-card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 35px;
+}
+
+.skills-card {
+  background: linear-gradient(180deg, #050b10, #020617);
+  border-radius: 18px;
+  padding: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 25px rgba(0, 229, 255, 0.15);
+}
+
+.skills-card h2 {
+  margin-bottom: 14px;
+  color: #00e5ff;
+  font-size: 1.2rem;
+}
+
+.skills-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.skills-card li {
+  margin: 6px 0;
+  opacity: 0.85;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .skills-jumble-area {
+    height: 520px;
+  }
+
+  .skill-bubble {
+    width: 90px;
+    height: 90px;
+  }
+
+  .skill-bubble i {
+    font-size: 2.1rem;
+  }
+}

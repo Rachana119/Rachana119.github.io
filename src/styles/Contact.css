@@ -1,0 +1,87 @@
+.contact-section {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #0a192f, #0f2a44);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Contact Card */
+.contact-container {
+  background: #071a2d;
+  padding: 40px;
+  border-radius: 20px;
+  width: 350px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+  border: 1px solid rgba(0, 255, 255, 0.15);
+  text-align: center;
+}
+
+.contact-container h2 {
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+/* Form */
+.contact-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-section input,
+.contact-section textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: #0f2a44;
+  color: white;
+  outline: none;
+}
+
+.contact-section input::placeholder,
+.contact-section textarea::placeholder {
+  color: #94a3b8;
+}
+
+.contact-section textarea {
+  resize: none;
+  height: 100px;
+}
+
+/* Button */
+.contact-section button {
+  padding: 12px;
+  background: cyan;
+  color: #071a2d;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact-section button:hover {
+  background: white;
+}
+
+/* Social Links */
+.contact-social {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.contact-social a {
+  color: cyan;
+  font-size: 20px;
+  transition: 0.3s;
+}
+
+.contact-social a:hover {
+  color: white;
+}

@@ -1,0 +1,75 @@
+.certifications-section {
+  padding: 80px 40px;
+  min-height: 100vh;
+  background: linear-gradient(90deg, #0a192f, #0f2a44);
+  color: white;
+}
+
+.certifications-section h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+}
+
+/* Grid layout */
+.certifications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.cert-btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: cyan;
+  color: #071a2d;
+  font-size: 0.85rem;
+  text-decoration: none;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.cert-btn:hover {
+  background: white;
+}
+
+/* Card */
+.cert-card {
+  background: #071a2d;
+  padding: 25px;
+  border-radius: 18px;
+  transition: 0.3s;
+  border: 1px solid rgba(0,255,255,0.1);
+}
+
+.cert-card:hover {
+  transform: translateY(-6px);
+  border: 1px solid cyan;
+}
+
+.cert-card h3 {
+  color: cyan;
+  margin-bottom: 10px;
+}
+
+.cert-card p {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+}
+
+/* Tags like project tech tags */
+.cert-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.cert-tags span {
+  background: #062f3b;
+  color: cyan;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}

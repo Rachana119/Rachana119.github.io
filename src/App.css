@@ -1,0 +1,37 @@
+:root {
+  --bg-dark: #020617;
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --glass-border: rgba(0, 229, 255, 0.25);
+  --text-main: #e6edf3;
+  --accent: #00e5ff;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top, #0f2027, #020617);
+  color: var(--text-main);
+  font-family: "Inter", system-ui, sans-serif;
+}
+
+section:not(.home-hero) {
+  padding: 90px 8%;
+}
+
+
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 40px;
+}
+
+.section-title {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+}
+
+.section-sub {
+  opacity: 0.75;
+  margin-bottom: 40px;
+}
